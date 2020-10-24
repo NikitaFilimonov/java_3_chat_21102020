@@ -12,7 +12,7 @@ public class Server {
 
     public Server() {
         clients = new CopyOnWriteArrayList<>();
-//        authService = new DataBaseAuthService();
+        authService = new DataBaseAuthService();
         ServerSocket server = null;
         Socket socket = null;
         final int PORT = 8180;
